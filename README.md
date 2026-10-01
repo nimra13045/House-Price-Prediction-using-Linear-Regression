@@ -83,7 +83,10 @@ The following EDA steps were performed:
 ### Algorithm
 
 **Linear Regression**
+## Screen-shot 
 
+![House Price Prediction Web App](images/output1.png)
+![House Price Prediction Web App](images/output2.png)
 ### Input Features
 
 ```text
@@ -228,6 +231,10 @@ Joblib
 HTML
 CSS
 Jupyter Notebook
+
+
+
+
 🔮 Future Improvements
 
 The current project is a machine learning learning/portfolio project. It can be improved by:
@@ -242,11 +249,13 @@ Improving the Flask UI
 Adding interactive visualizations
 Deploying the application online
 Adding a database for property records
+
 ⚠️ Limitations
 The dataset contains only 40 observations.
 The model uses a limited number of house features.
 The predicted price is an estimate, not a guaranteed market value.
 Model performance on this dataset may not generalize to other housing markets or larger datasets.
+
 👩‍💻 Author
 
 Nimra Nazir
@@ -262,4 +271,4 @@ Web Development
 AI Engineering
 📜 License
 
-This project is created for educational and portfolio purposes.
+This project is created for educational and portfolio purpose.
