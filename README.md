@@ -83,10 +83,14 @@ The following EDA steps were performed:
 ### Algorithm
 
 **Linear Regression**
-## Screen-shot 
 
-![House Price Prediction Web App](images/output1.png)
-![House Price Prediction Web App](images/output2.png)
+## Web Application Output
+
+### Output 1
+![House Price Prediction Output](images/output1.png)
+
+### Output 2
+![House Price Prediction Output](images/output2.png)
 ### Input Features
 
 ```text
