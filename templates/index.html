@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>House Price Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>🏠 House Price Prediction</h1>
+
+        <p class="subtitle">
+            Enter house details to estimate its price
+        </p>
+
+
+        <form action="/predict" method="POST">
+
+
+            <label for="area">
+                Area (sqft)
+            </label>
+
+            <input
+                type="number"
+                id="area"
+                name="area"
+                min="1"
+                required
+            >
+
+
+            <label for="bedrooms">
+                Bedrooms
+            </label>
+
+            <input
+                type="number"
+                id="bedrooms"
+                name="bedrooms"
+                min="1"
+                required
+            >
+
+
+            <label for="bathrooms">
+                Bathrooms
+            </label>
+
+            <input
+                type="number"
+                id="bathrooms"
+                name="bathrooms"
+                min="1"
+                required
+            >
+
+
+            <label for="stories">
+                Stories
+            </label>
+
+            <input
+                type="number"
+                id="stories"
+                name="stories"
+                min="1"
+                required
+            >
+
+
+            <button type="submit">
+                Predict House Price
+            </button>
+
+        </form>
+
+
+        {% if prediction %}
+
+        <div class="result">
+
+            <h2>Predicted Price</h2>
+
+            <p>
+                PKR {{ prediction }}
+            </p>
+
+        </div>
+
+        {% endif %}
+
+
+    </div>
+
+</body>
+
+</html>
